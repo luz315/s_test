@@ -92,7 +92,15 @@ LoginFilter는 UsernamePasswordAuthenticationFilter를 확장하여 로그인 �
 
 ---
 
-### **6. 리졸버를 이용한 `@CurrentUser` 자동 주입**
+### 6. 리졸버를 이용한 `@CurrentUser` 자동 주입
 
 - 이 방식은 **반복적인 인증 로직**을 줄이고 코드의 **가독성**과 **유지보수성**을 높였습니다.
 - **커스텀 리졸버**를 사용함으로써 **Spring Security**와의 통합을 자연스럽게 처리할 수 있습니다.
+
+### 7. Request Validation 검사
+  
+- 비정상 입력에 대한 조기 차단 및 명확한 피드백 제공합니다.
+- GlobalExceptionHandler에서 MethodArgumentNotValidException을 처리하도록 구성해 유효성 실패 시에도 일관된 에러 메시지 포맷으로 응답이 내려갑니다.
+
+### 8. 테스트코드 구현
+
