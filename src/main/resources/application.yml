@@ -5,7 +5,7 @@ spring:
 admin:
   username: admin
   password: admin1234
-  nickname: ???
+  nickname: admin
 
 springdoc:
   api-docs:
