@@ -1,10 +1,14 @@
-package com.spartatest.auth.infrastructure.security;
+package com.spartatest.auth.infrastructure.security.config;
 
 import com.spartatest.auth.domain.repository.UserRepository;
 import com.spartatest.auth.domain.repository.UserRepositoryImpl;
 import com.spartatest.auth.infrastructure.cookie.CookieUtil;
 import com.spartatest.auth.infrastructure.jwt.JwtGenerator;
 import com.spartatest.auth.infrastructure.jwt.JwtValidator;
+import com.spartatest.auth.infrastructure.security.filter.CustomLogoutFilter;
+import com.spartatest.auth.infrastructure.security.JwtAuthenticationEntryPoint;
+import com.spartatest.auth.infrastructure.security.filter.JwtFilter;
+import com.spartatest.auth.infrastructure.security.filter.LoginFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

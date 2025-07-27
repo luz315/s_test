@@ -1,4 +1,4 @@
-package com.spartatest.auth.infrastructure.security;
+package com.spartatest.auth.infrastructure.security.filter;
 
 import com.spartatest.auth.infrastructure.cookie.CookieUtil;
 import com.spartatest.auth.infrastructure.jwt.JwtValidator;

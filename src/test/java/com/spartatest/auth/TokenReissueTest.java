@@ -1,7 +1,7 @@
 package com.spartatest.auth;
 
 import com.spartatest.auth.domain.repository.UserRepository;
-import com.spartatest.auth.dto.SignupRequest;
+import com.spartatest.auth.dto.request.SignupRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
