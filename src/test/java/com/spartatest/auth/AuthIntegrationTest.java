@@ -4,10 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spartatest.auth.domain.entity.Role;
 import com.spartatest.auth.domain.entity.User;
 import com.spartatest.auth.domain.repository.UserRepository;
-import com.spartatest.auth.dto.SignupRequest;
+import com.spartatest.auth.dto.request.SignupRequest;
 import com.spartatest.auth.infrastructure.jwt.JwtGenerator;
-import com.spartatest.common.response.ApiResult;
-import jakarta.servlet.http.Cookie;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -34,7 +32,7 @@ public class AuthIntegrationTest {
     @Autowired private BCryptPasswordEncoder passwordEncoder;
 
     private final String TEST_USERNAME = "testuser";
-    private final String TEST_PASSWORD = "password1234";
+    private final String TEST_PASSWORD = "pass12";
     private final String TEST_NICKNAME = "Tester";
 
     @BeforeEach

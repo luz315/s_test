@@ -1,18 +1,17 @@
-package com.spartatest.auth.dto;
+package com.spartatest.auth.dto.response;
 
 import com.spartatest.auth.domain.entity.Role;
 import com.spartatest.auth.domain.entity.User;
 
-public record GrantAdminResponse(
+public record SignupResponse(
         String username,
         String nickname,
-        Role role
+        Role roles
 ) {
-    public static GrantAdminResponse from(User user) {
-        return new GrantAdminResponse(
+    public static SignupResponse from(User user) {
+        return new SignupResponse(
                 user.getUsername(),
                 user.getNickname(),
-                user.getRole()
-        );
+                user.getRole());
     }
 }

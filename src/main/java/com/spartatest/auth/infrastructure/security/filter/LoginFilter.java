@@ -1,10 +1,11 @@
-package com.spartatest.auth.infrastructure.security;
+package com.spartatest.auth.infrastructure.security.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spartatest.auth.domain.entity.User;
 import com.spartatest.auth.domain.repository.UserRepository;
 import com.spartatest.auth.infrastructure.jwt.JwtGenerator;
 import com.spartatest.auth.infrastructure.cookie.CookieUtil;
+import com.spartatest.auth.infrastructure.security.CustomUserDetails;
 import com.spartatest.common.exception.custom.AuthErrorCode;
 import com.spartatest.common.exception.CustomException;
 import com.spartatest.common.exception.custom.UserErrorCode;

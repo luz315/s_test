@@ -1,8 +1,9 @@
-package com.spartatest.auth.infrastructure.security;
+package com.spartatest.auth.infrastructure.security.filter;
 
 import com.spartatest.auth.domain.entity.Role;
 import com.spartatest.auth.infrastructure.cookie.CookieUtil;
 import com.spartatest.auth.infrastructure.jwt.JwtValidator;
+import com.spartatest.auth.infrastructure.security.CustomUserDetails;
 import com.spartatest.common.exception.custom.AuthErrorCode;
 import com.spartatest.common.exception.CustomException;
 import io.jsonwebtoken.MalformedJwtException;
